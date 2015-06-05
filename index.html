@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="lib/jquery-1.6.4.js"></script>
+        <script src="lib/jquery.mobile-1.1.0.js"></script>
+        <link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet">
+        <link href="src/css/jquery.mobile.theme-1.1.0.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div data-role="page" id="PaginaPrincipal" data-theme="b">
+            <div data-role="header" data-theme="c">
+                <h1>TWILIGHT</h1>
+            </div>
+            <div data-role="content">
+                <div data-role="collapsible">
+                    <h1>Menu</h1>
+                    <div class="div-widget">
+                        <ul data-role="listview" data-inset="true">
+                            <li>
+                                <a href="#Libros">Libros</a>
+                            </li>
+                            <li>
+                                <a href="#Peliculas">Peliculas</a>
+                            </li>
+                            <li>
+                                <a href="#Actores">Actores</a>
+                            </li>
+                            <li>
+                                <a href="#Canciones">Canciones</a>
+                            </li>
+                            <li>
+                                <a href="#Imagenes">Imagenes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div data-role="footer">
+                <h1>Aplicacion para fans de "La saga Crepusculo"</h1>
+            </div>
+        </div>
+        <div data-role="page" id="Libros" data-theme="b">
+            <div data-role="header">
+                <h1>Libros</h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <a href="#PaginaPrincipal">Menu Principal</a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Saga</h1>
+                <a data-role="button" id="Crepusculo" href="#Libro-Crepusculo" data-iconshadow="false">Crepusculo</a>
+                <a data-role="button" id="LunaNueva" href="#Libro-LunaNueva">Luna Nueva</a>
+                <a data-role="button" id="Eclipse" href="#Libro-Eclipse" data-rel="page">Eclipse</a>
+                <a data-role="button" id="Amanecer" href="#Libro-Amanecer" data-rel="page">Amanecer</a>
+            </div>
+        </div>
+        <div data-role="page" id="Peliculas" data-theme="b">
+            <div data-role="header">
+                <h1>Peliculas</h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <a href="#PaginaPrincipal">Menu Principal</a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Saga</h1>
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a data-role="button" href="#Pelicula-Crepusculo" data-rel="page">Crepusculo</a>
+                    <a data-role="button" href="#Pelicula-LunaNueva" data-rel="page">Luna Nueva</a>
+                    <a data-role="button" href="#Pelicula-Eclipse" data-rel="page">Eclipse</a>
+                    <a data-role="button" href="#Pelicula-Amanecer_Parte1_y_Parte2" data-rel="page">Amanecer</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="Actores" data-theme="b">
+            <div data-role="header">
+                <h1>Actores</h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <a href="#PaginaPrincipal">Menu Principal</a>
+                    </li>
+                </ul>
+                <span>Text</span>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Saga</h1>
+                <p>1. Edward Cullen - Robert Pattinson</p>
+                <p>2. Alice Cullen - Ashley Greene</p>
+                <p>3. Jacob Black - Taylor Lautner</p>
+                <p>4. Isabella ''Bella'' Swan - Kristen Stewart</p>
+                <p>5. Renesmee Cullen - Mackenzie Foy</p>
+                <p>6. Carlisle Cullen - Peter Facinelli</p>
+                <p>7. Emmett Cullen - Kellan Lutz</p>
+                <p>8. Jasper Hale - Jackson Rathbone</p>
+                <p>9. Rosalie Hale - Nikki Reed</p>
+                <p>10. Esme Cullen - Elizabeth Reaser</p>
+                <p>11. Seth Clearwater - Boo Boo Stewart</p>
+                <p>12. Jane - Dakota Fanning</p>
+                <p>13. Charlie Swan - Billy Burke</p>
+                <p>14. Paul Lahote - Alex Meraz</p>
+                <p>15. Embry Call - Kiowa Gordon</p>
+                <p>16. Aro - Michael Sheen</p>
+                <p>17. Leah Clearwater - Julia Jones</p>
+                <span>18. Alec - Cameron Bright</span>
+                <p>19. Victoria - Rachelle Lefevre y Bryce Dallas Howard</p>
+                <p>20. Bree Tanner - Jodelle Ferland</p>
+                <p>21. Sam Uley - Chaske Spencer</p>
+                <p>22. Emily Young - Tinsel Korey</p>
+                <p>23. Billy Black - Gil Birmingham</p>
+                <p>24. Renée Dwyer - Sarah Clarke</p>
+                <p>25. Riley Biers - Xavier Samuel</p>
+                <p>26. Jared Cameron - Bronson Pelletier</p>
+                <p>27. James - Cam Gigandet</p>
+                <p>28. Cayo - Jamie Campbell Bower</p>
+                <p>29. Eleazar - Christian Camargo</p>
+                <p>30. Marcus - Christopher Heyerdahl</p>
+                <p>31. Laurent - Edi Gathegi</p>
+                <p>32. Demetri - Charlie Bewley</p>
+                <p>33. Quil Ateara - Tyson Houseman</p>
+                <p>34. Brady Fuller - Swo-wo Gabriell</p>
+                <p>35. Collin Littlesea - Brayden Jimmie</p>
+                <p>36. Felix - Daniel Cudmore</p>
+                <p>37. Phil Dwyer - Matt Bushel</p>
+                <p></p>
+            </div>
+        </div>
+        <div data-role="page" id="Canciones" data-theme="b">
+            <div data-role="header">
+                <h1>Canciones</h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <a href="#PaginaPrincipal">Menu Principal</a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Saga</h1>
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a data-role="button" href="#Canciones-Crepusculo" data-rel="page">Crepusculo</a>
+                    <a data-role="button" href="#Canciones-LunaNueva" data-rel="page">Luna Nueva</a>
+                    <a data-role="button" href="#Canciones-Eclipse" data-rel="page">Eclipse</a>
+                    <a data-role="button" href="#Canciones-AmanecerPart1" data-rel="page">Amanecer part1</a>
+                    <a data-role="button" href="#Canciones-AmanecerPart2" data-rel="page">Amanecer part2</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="Imagenes" data-theme="b">
+            <div data-role="header">
+                <h1>Imagenes</h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <a href="#PaginaPrincipal">Menu Principal</a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Saga</h1>
+            </div>
+        </div>
+        <div data-role="page" id="Libro-Crepusculo" data-theme="b">
+            <div data-role="header">
+                <h1>Libro</h1>
+            </div>
+            <div data-role="content">
+                <a data-role="button" href="#Libros" data-rel="page">Menu-Libros</a>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Crepusculo</h1>
+                <span>Crepúsculo (Twilight) es una novela romántica de vampiros dirigida al público adolescente,
+                    escrita por Stephenie Meyer y publicada en 2005. Es la primera parte de una saga|serie
+                    de cuatro libros que están publicados, además de "Crepúsculo", Luna nueva", "Eclipse"
+                    y "Amanecer". "Sol de medianoche" es un proyecto aparte, sin finalizar, que Stephenie
+                    lleva trabajando desde hace tiempo; en el cual se repite la historia de Crepúsculo
+                    pero narrada por Edward Cullen, este proyecto ha sido suspendido indefinidamente
+                    por la autora, debido a la distribución ilegal de los primeros 12 capítulos. 2 La
+                    novela ha sido traducida a 37 idiomas y ha vendido más de 25 millones de copias.</span>
+            </div>
+        </div>
+        <div data-role="page" id="Libro-LunaNueva" data-theme="b">
+            <div data-role="header">
+                <h1>Libro</h1>
+            </div>
+            <div data-role="content">
+                <a data-role="button" href="#Libros" data-rel="page">Menu-Libros</a>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Luna Nueva</h1>
+                <span>Luna nueva (New Moon) es una novela de fantasía y romance para jóvenes creada por
+                    Stephenie Meyer y publicada en 2006; es la segunda parte de una serie de cuatro libros,
+                    de la que, además, están publicados Crepúsculo, Eclipse y Amanecer. Es narrada en
+                    primera persona por Bella Swan, y trata de la depresión de esta y el desarrollo de
+                    su amistad con Jacob Black, originado todo por la partida de Edward para protegerla
+                    tras un accidente con Jasper y Bella en su cumpleaños, en donde la vida de esta estuvo
+                    en peligro.</span>
+            </div>
+        </div>
+        <div data-role="page" id="Libro-Eclipse" data-theme="b">
+            <div data-role="header">
+                <h1>Libro</h1>
+            </div>
+            <div data-role="content">
+                <a data-role="button" href="#Libros" data-rel="page">Menu-Libros</a>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Eclipse</h1>
+                <span>Eclipse es una novela de fantasía y romance para jóvenes escrita por la autora Stephenie
+                    Meyer y publicada en el año 2007. Es la tercera parte de una serie de cuatro libros,
+                    que también incluye a Crepúsculo, Luna Nueva y Amanecer. También existen otros dos
+                    libros pertenecientes a la saga; el primero, Sol de Medianoche, es una versión de
+                    Crepúsculo contada desde la perspectiva de Edward, y el más reciente, La Segunda
+                    Corta Vida de Bree Tanner (The Short Second Life of Bree Tanner), se centra en Bree,
+                    personaje secundario de Eclipse, quien relata su vida como neófita. Asimismo hay
+                    una guía oficial de Crepúsculo para fanáticos.</span>
+            </div>
+        </div>
+        <div data-role="page" id="Libro-Amanecer" data-theme="b">
+            <div data-role="header">
+                <h1>Libro</h1>
+            </div>
+            <div data-role="content">
+                <a data-role="button" href="#Libros" data-rel="page">Menu-Libros</a>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Amanecer</h1>
+                <span>Amanecer (en inglés Breaking Dawn) es la cuarta novela de la saga Crepúsculo, escrita
+                    por Stephenie Meyer y la última narrada desde la perspectiva de Bella Swan. A diferencia
+                    de sus predecesoras (Crepúsculo, Luna nueva y Eclipse) Amanecer está contada por
+                    Bella Swan y Jacob Black</span>
+            </div>
+        </div>
+        <div data-role="page" id="Pelicula-Crepusculo" data-theme="b">
+            <div data-role="header">
+                <h1>Pelicula</h1>
+            </div>
+            <div data-role="content">
+                <a data-role="button" href="#Peliculas" data-rel="page">Menu Peliculas</a>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Crepusculo</h1>
+                <p>La protagonista de la historia es Isabella Swan (Bella), una joven de diecisiete
+                    años que se muda con su padre a Forks, Washington, después de que su madre se vuelve
+                    a casar con Phil, su nuevo padrastro. En el colegio conoce a Eric, Mike, Jessica,
+                    y Angela, que se convierten en sus nuevos amigos. Cuando Bella está en la cafetería
+                    ve a tres estudiantes que le llaman la atención por su belleza y su palidez. Son
+                    los hermanos Cullen: Edward, Emmett y Jasper. Luego conoce a sus otras hermanas,
+                    Alice y Rosalie. En realidad no son hermanos biológicos, sino que todos fueron adoptados
+                    por el doctor Carlisle Cullen y su esposa, Esme Cullen. Entre ellos, Edward es quien
+                    capta rápidamente la atención de Bella. Su atención va en aumento, hasta alcanzar
+                    su máximo punto cuando descubre que Edward posee una gran fuerza y velocidad, ya
+                    que cuando Bella está a punto de morir aplastada por un coche Edward le salva la
+                    vida apareciendo junto a ella muy rápido y parando el coche con la mano. Esto la
+                    lleva a investigarlo, y finalmente, después de hablar con Jacob Black, a descubrir
+                    que es un vampiro. Entre ellos surge un romance muy peligroso ya que Edward es peligroso
+                    para Bella, pero él no quiere apartarse de Bella y ella tampoco se quiere alejar
+                    de él. El romance es peligroso, porque para Edward, Bella es como una droga, tiene
+                    más ganas de morderla a ella que al resto de la gente. Edward invita a Bella a ir
+                    a ver cómo juegan él y su familia al béisbol, juego que disfrutan mucho en su familia
+                    en especial cuando el clima está soberbio, pero mientras están jugando aparecen tres
+                    vampiros: James, Laurent y Victoria. James es un rastreador, la caza es su obsesión
+                    y decide ir a por Bella. Edward trata de protegerla queriéndola esconder él y toda
+                    su familia tratan de ahuyentar al cazador, pero al final encuentra a Bella en una
+                    escuela de ballet a la que fue durante su niñez, la amenaza con matar a su mamá ya
+                    que este fue a su casa a buscar en Forks le dice que vaya sola, porque algo le podría
+                    pasar a su madre. Después se encuentra con él, y empieza una tortura hacia ella antes
+                    de ser mordida por el vampiro, la alcanza a morder un poco, pero llega Edward y empieza
+                    a combatir contra el vampiro(James)luego cuando logra derrotarlo los hermanos de
+                    Edward empiezan a hacer un tipo de ritual para vencerlo, mientras Edward intenta
+                    salvar a Bella sacandole todo el veneno para que no se convierta en vampiro. Después,
+                    Bella se encuentra en un hospital con su madre y Edward, él le dice que tiene que
+                    estar lejos de ella, pero ninguno de los dos puede, así que deciden ir al baile de
+                    la escuela juntos. Bella va al baile con un yeso en la pierna ya que se la rompió.
+                    Y en el baile Bella quiere que Edward la muerda para volverse vampiro, pero Edward
+                    dice que no que es mejor asi.</p>
+            </div>
+        </div>
+        <div data-role="page" id="Pelicula-LunaNueva" data-theme="b">
+            <div data-role="header">
+                <h1>Pelicula</h1>
+            </div>
+            <div data-role="content">
+                <a data-role="button" href="#Peliculas" data-rel="page">Menu Principal</a>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Luna Nueva</h1>
+                <p>Luna nueva comienza con el decimoctavo cumpleaños de Bella. No es un muy buen día
+                    porque se vuelve mayor que Edward. A pesar de que Bella no desea celebrar su cumpleaños,
+                    Edward y su hermana Alice, de la cual se vuelve amiga en Crepúsculo, logran convencerla
+                    de que vaya a la Mansión Cullen. La familia Cullen está compuesta por Carlisle y
+                    Esme, los "padres" de la familia y sus cinco "hijos", Edward, Emmett, Rosalie, Alice
+                    y Jasper. Éste último ha sido el miembro más nuevo de la familia, aún no acostumbrado
+                    al estilo de vida de los Cullen, que solo se alimentan de animales. El cumpleaños
+                    termina en un desastre cuando Bella se corta un dedo abriendo un regalo. Esa sangre
+                    descontrola a Jasper, quien trata de atacarla. Más tarde Edward dice a Bella que
+                    ella estaría mejor y más segura sin él, su familia, ni su peligroso estilo de vida
+                    y decide dejar Forks, junto a su familia. Le hace creer que ya no siente nada por
+                    ella, diciéndole que "será como si nunca hubiese existido". Bella cae en una profunda
+                    depresión por cuatro meses. Es en ese momento cuando su padre, desesperado por su
+                    comportamiento, la amenaza con enviarla a vivir junto a su madre. Bella intenta entonces
+                    superar su tristeza. Un día, intentando liberarse de una visita al psicólogo organizada
+                    por su padre, invita a su amiga Jessica, a quien había dejado de ver por su relación
+                    con Edward, a Port Angels a ver una película y a comer algo. Luego de ver la película,
+                    vieron a cuatro hombres fuera de un bar. Bella se acercó a ellos, sin saber muy bien
+                    por qué, escuchando en ese momento la voz de Edward en su cabeza, ordenándole volver
+                    con Jessica. Pronto comprende que exponerse al peligro le permite oír su voz. Aún
+                    deprimida y desesperada por oír la voz de Edward, consigue unas desgastadas motocicletas,
+                    que sabe sólo Jacob Black podría arreglar. Comienza a acercarse a Jacob, sintiendo
+                    junto a él un poco de consuelo a su dolor, hasta que llegan a ser amigos muy cercanos.
+                    Jacob le enseña a Bella como manejar una motocicleta. Cerca de donde vive Jacob,
+                    La Push, los jóvenes practican el "Salto del Acantilado" hacia el mar. Jacob promete
+                    a Bella que la llevará a hacerlo, después de que ella ve a unos chicos haciéndolo.
+                    Jacob le explica que son los seguidores de la "secta" de Sam el guardabosques, quienes
+                    después de unirse a él cambiaron mucho. La relación de Bella con Jacob está ya a
+                    punto de volverse un romance cuando Jacob deja de responder las llamadas de Bella.
+                    Ella, incapaz de comprender lo que sucede, comienza a deprimirse nuevamente, hasta
+                    que decide ir a La Push y enfrentarlo. En ese momento comprende que Jacob se ha convertido
+                    en un hombre-lobo o licántropo, quienes son enemigos de los vampiros y defienden
+                    a los humanos de ellos. Al mismo tiempo, descubre que Victoria (una vampira perteneciente
+                    al clan que le atacó al final de la novela Crepúsculo) ha vuelto para vengarse. Bella
+                    va a visitar a Jacob y como esperaba a que volviera de buscar a Victoria nuevamente,
+                    decidio que ella seria capaz de realizar salto de acantilado sin su compañia , aunque
+                    no tuvo en cuenta la tormenta que se avecinaba. Se lanzó dando un grito de júbilo
+                    y en el agua no era capaz de mantenerse a flote, rayando en la inconciencia y luego
+                    de ver una especie de "llama" roja en el agua; empezo a ahogarse en el agua y sentia
+                    a cada instante la voz de Edward que rugía cosas para que se salve, casi se ahoga
+                    en el intento de no ser porque Jacob la salvó. Cuando Alice, la hermana de Edward
+                    (quien puede predecir el futuro) ve a Bella saltar, cree que se ha suicidado, y vuelve
+                    enseguida a Forks. Edward, totalmente apartado de su familia, recibe la noticia de
+                    Rosalie, su otra hermana. Al llamar a la casa de Bella para asegurarse de que habia
+                    pasado, contesta Jacob Black, Edward se hace pasar por Carlisle y pregunta por Charlie,
+                    quien casualmente se encontraba en el entierro de su mejor amigo, Jacob menciona
+                    el entierro, Edward cree que es a Bella a quien están sepultando. Alice, ya en Forks,
+                    le cuenta a Bella que Edward va a ir a Italia a buscar a los Vulturis (un clan de
+                    vampiros antiguos que ejercian la ley), para que lo destruyeran. Esto Edward se lo
+                    había dicho a Bella en alguna ocasión, si alguna vez le pasaba algo a Bella, iría
+                    hacia los Vulturis para que lo destruyeran, ya que el no estaba dispuesto a vivir
+                    sin ella. Bella y Alice van rápidamente a Volterra, Italia (Localidad dónde viven
+                    los Vulturis) a tratar de "salvar" a Edward. La única regla que ponen los Vulturis
+                    es que los humanos nunca sepan de la existencia de los Vampiros. Ya en Italia, Bella
+                    encuentra a Edward y lo convence de no cometer aquél error, pero ya estaban demasiado
+                    cerca de los Vulturis. Bella choca contra Edward quien estando a punto de exponerse
+                    al sol y creyéndose por fin muerto piensa que su alma está junto a la de Bella. Los
+                    Vulturius se los llevan a una especie de cámara subterránea y les hacen jurar que
+                    Bella se convertirá, o ellos mismos irán a asesinarla.</p>
+            </div>
+        </div>
+        <div data-role="page" id="Pelicula-Eclipse" data-theme="b">
+            <div data-role="header">
+                <h1>Pelicula</h1>
+            </div>
+            <div data-role="content">
+                <a data-role="button" href="#Peliculas" data-rel="page">Menu Peliculas</a>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Eclipse</h1>
+                <p>Luna nueva comienza con el decimoctavo cumpleaños de Bella. No es un muy buen día
+                    porque se vuelve mayor que Edward. A pesar de que Bella no desea celebrar su cumpleaños,
+                    Edward y su hermana Alice, de la cual se vuelve amiga en Crepúsculo, logran convencerla
+                    de que vaya a la Mansión Cullen. La familia Cullen está compuesta por Carlisle y
+                    Esme, los "padres" de la familia y sus cinco "hijos", Edward, Emmett, Rosalie, Alice
+                    y Jasper. Éste último ha sido el miembro más nuevo de la familia, aún no acostumbrado
+                    al estilo de vida de los Cullen, que solo se alimentan de animales. El cumpleaños
+                    termina en un desastre cuando Bella se corta un dedo abriendo un regalo. Esa sangre
+                    descontrola a Jasper, quien trata de atacarla. Más tarde Edward dice a Bella que
+                    ella estaría mejor y más segura sin él, su familia, ni su peligroso estilo de vida
+                    y decide dejar Forks, junto a su familia. Le hace creer que ya no siente nada por
+                    ella, diciéndole que "será como si nunca hubiese existido". Bella cae en una profunda
+                    depresión por cuatro meses. Es en ese momento cuando su padre, desesperado por su
+                    comportamiento, la amenaza con enviarla a vivir junto a su madre. Bella intenta entonces
+                    superar su tristeza. Un día, intentando liberarse de una visita al psicólogo organizada
+                    por su padre, invita a su amiga Jessica, a quien había dejado de ver por su relación
+                    con Edward, a Port Angels a ver una película y a comer algo. Luego de ver la película,
+                    vieron a cuatro hombres fuera de un bar. Bella se acercó a ellos, sin saber muy bien
+                    por qué, escuchando en ese momento la voz de Edward en su cabeza, ordenándole volver
+                    con Jessica. Pronto comprende que exponerse al peligro le permite oír su voz. Aún
+                    deprimida y desesperada por oír la voz de Edward, consigue unas desgastadas motocicletas,
+                    que sabe sólo Jacob Black podría arreglar. Comienza a acercarse a Jacob, sintiendo
+                    junto a él un poco de consuelo a su dolor, hasta que llegan a ser amigos muy cercanos.
+                    Jacob le enseña a Bella como manejar una motocicleta. Cerca de donde vive Jacob,
+                    La Push, los jóvenes practican el "Salto del Acantilado" hacia el mar. Jacob promete
+                    a Bella que la llevará a hacerlo, después de que ella ve a unos chicos haciéndolo.
+                    Jacob le explica que son los seguidores de la "secta" de Sam el guardabosques, quienes
+                    después de unirse a él cambiaron mucho. La relación de Bella con Jacob está ya a
+                    punto de volverse un romance cuando Jacob deja de responder las llamadas de Bella.
+                    Ella, incapaz de comprender lo que sucede, comienza a deprimirse nuevamente, hasta
+                    que decide ir a La Push y enfrentarlo. En ese momento comprende que Jacob se ha convertido
+                    en un hombre-lobo o licántropo, quienes son enemigos de los vampiros y defienden
+                    a los humanos de ellos. Al mismo tiempo, descubre que Victoria (una vampira perteneciente
+                    al clan que le atacó al final de la novela Crepúsculo) ha vuelto para vengarse. Bella
+                    va a visitar a Jacob y como esperaba a que volviera de buscar a Victoria nuevamente,
+                    decidio que ella seria capaz de realizar salto de acantilado sin su compañia , aunque
+                    no tuvo en cuenta la tormenta que se avecinaba. Se lanzó dando un grito de júbilo
+                    y en el agua no era capaz de mantenerse a flote, rayando en la inconciencia y luego
+                    de ver una especie de "llama" roja en el agua; empezo a ahogarse en el agua y sentia
+                    a cada instante la voz de Edward que rugía cosas para que se salve, casi se ahoga
+                    en el intento de no ser porque Jacob la salvó. Cuando Alice, la hermana de Edward
+                    (quien puede predecir el futuro) ve a Bella saltar, cree que se ha suicidado, y vuelve
+                    enseguida a Forks. Edward, totalmente apartado de su familia, recibe la noticia de
+                    Rosalie, su otra hermana. Al llamar a la casa de Bella para asegurarse de que habia
+                    pasado, contesta Jacob Black, Edward se hace pasar por Carlisle y pregunta por Charlie,
+                    quien casualmente se encontraba en el entierro de su mejor amigo, Jacob menciona
+                    el entierro, Edward cree que es a Bella a quien están sepultando. Alice, ya en Forks,
+                    le cuenta a Bella que Edward va a ir a Italia a buscar a los Vulturis (un clan de
+                    vampiros antiguos que ejercian la ley), para que lo destruyeran. Esto Edward se lo
+                    había dicho a Bella en alguna ocasión, si alguna vez le pasaba algo a Bella, iría
+                    hacia los Vulturis para que lo destruyeran, ya que el no estaba dispuesto a vivir
+                    sin ella. Bella y Alice van rápidamente a Volterra, Italia (Localidad dónde viven
+                    los Vulturis) a tratar de "salvar" a Edward. La única regla que ponen los Vulturis
+                    es que los humanos nunca sepan de la existencia de los Vampiros. Ya en Italia, Bella
+                    encuentra a Edward y lo convence de no cometer aquél error, pero ya estaban demasiado
+                    cerca de los Vulturis. Bella choca contra Edward quien estando a punto de exponerse
+                    al sol y creyéndose por fin muerto piensa que su alma está junto a la de Bella. Los
+                    Vulturius se los llevan a una especie de cámara subterránea y les hacen jurar que
+                    Bella se convertirá, o ellos mismos irán a asesinarla.</p>
+            </div>
+        </div>
+        <div data-role="page" id="Pelicula-Amanecer_Parte1_y_Parte2" data-theme="b">
+            <div data-role="header">
+                <h1>Pelicula</h1>
+            </div>
+            <div data-role="content">
+                <a data-role="button" href="#Peliculas" data-rel="page">Menu Peliculas</a>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Amanecer part1 y part2</h1>
+                <p>Comienza con Bella recordando el momento en el que ella y Edward le comunican de
+                    su compromiso a sus padres, consiguiendo increiblemente que ambos lo acepten (aunque
+                    Charlie solo acepto porque penso que Renee se opondria) Llega el dia de la boda,
+                    todo va estupendamente hasta el momento del regalo de bodas de Edward que resulta
+                    ser Jacob, sabiendo que a Bella le agradaria su presencia, sin embargo cuando este
+                    pregunta acerca de su luna de miel, se descontrola e intenta matar a Edward siendo
+                    controlado por Seth. Edward y Bella parten a su luna de miel, un lugar que él le
+                    habia mantenido en secreto hasta ahora, el destino resulta ser Isla Esme, situada
+                    en Brasil, un regalo de Carlisle que Esme amablemente se habia ofrecido a prestarles,
+                    ahi una nativa del lugar sospecha de lo que es Edward, debido a algunas leyendas
+                    del lugar. Edward y Bella pasan su primera noche juntos y el cumple su promesa, le
+                    hace el amor, a la mañana siguiente Bella despierta y lo nota enojado, él se siente
+                    como un monstruo por haber accedidó a acostarse con ella, porque le habia causado
+                    unos moretones en el brazo y debajo de las costillas, ella trata de hacerle entender
+                    que no le importa, y que habia sido maravilloso sin embargo el jura que no la volvería
+                    a tocar hasta que este convertida. Dias después tras el insistimiento de Bella, rompe
+                    su promesa y vuelve a dormir con ella, esta vez no le causa ningun daño y le dice
+                    que podian volver a hacerlo si ella asi lo deseaba. Pasan los días en la isla y Bella
+                    se la pasa durmiendo más de 12 horas y comiendo en grandes cantidades, en especial
+                    huevos, además de ponerse muy sentimental en ciertas ocasiones y tener extraños sueños
+                    con niños inmortales a raíz de una historia que le contó Carlisle. Un día se pone
+                    a vomitar y decubre que tiene un retraso de cinco dias, se lo dice a Edward y este
+                    queda en shock, luego llaman a Alice y ella los comunica con Carlisle y este confirma
+                    sus sospechas, lo más probable es que Bella este embarazada. Edward le dice que no
+                    se preocupe, que sacaran esa "cosa" de ella antes que le haga daño, Bella se da cuenta
+                    de que quieren que aborte y llama a Rosalie a pedirle ayuda, y esta acepta!. Edward
+                    se encuentra al borde de la locura, Bella se niega a abortar aún sabiendo que esto
+                    podría matarla y Rosalie la protege día y noche, además, el embarazo se desarrolla
+                    rápidamente y en solo semanas Bella ya tiene un gran bulto en su vientre. Al estar
+                    desesperado Edward recurre a Jacob y le pide que trate de convencerla de abortar,
+                    él lo intenta, pero como es de esperar fracasa. Los dias pasan y Edward descubre
+                    que puede leer los pensamientos del bebé, se da cuenta de que este ama a Bella con
+                    todo su ser y le agrada la voz de ella y la suya misma, desde ese momento, incapaz
+                    de odiar a algo que ama a Bella, comienza a tomarle cariño al bebe y desiste en la
+                    idea de hacer que aborte. El día del parto llega rápidamente, en menos de un mes,
+                    Carlisle esta de caza con Jasper y Emmet, asi que Rosalie, Edward y Jacob deben hacer
+                    de parteros, Bella empieza a retorcerse y algunos huesos se le rompen, Rosalie intenta
+                    comenzar una cesarea pero en ese momento Bella vomita sangre y Rosalie se descontrola,
+                    teniendo que intervenir Alice y Jacob, Edward trata de hacer la cesarea pero nota
+                    que el bisturi no le es útil, por lo que debe usar sus propios dientes para realizar
+                    la cesarea, mientras Jacob le haze respiracion boca a boca a Bella para que esta
+                    no se ahogue, Edward logra rescatar al bebé, que resulta ser una niña. Bella la ve
+                    y luego su corazón se comienza a parar, Jacob la interviene mientras Edward le inyecta
+                    su ponzoña y la muerde en diferentes lugares para que se disperse más rápido por
+                    la sangre, Bella logra salvarse y tras tres dias despierta como un vampiro. Antes
+                    de que Bella pueda ver a Renesmee, su hija, debe salir de caza, ya que al ser mitad
+                    humana y poseer sangre podría ser un peligro para la niña. Salen de caza y Bella
+                    demuestra un gran autocontrol al no morder a unos humanos que pasaban por el bosque,
+                    luego Bella y Edward van a ver a su hija, ella le pregunta como es y él le dice que
+                    es el ser mas maravilloso del mundo, Bella nota la devoción con la que Edward habla
+                    de su hija y eso la alegra, también le pregunta por Jacob y él le dice que él continua
+                    en la casa. Llegan y Bella logra ver a Renesmee, también conoce su poder, la niña
+                    puede a traves del contacto físico mostrar sus pensamientos, exactamente lo contrario
+                    a lo que hace Edward. Bella también descubre que Jacob esta imrpimado de Renesmee
+                    y que lo puso como apodo Nessie, ella se enfanda muchisimo y Jacob dice que él no
+                    piensa en la bebé de esa manera, y que de lo contrario Edward ya lo hubiese matado.
+                    Pasan algunos meses y mientras Bella, Jacob y Nessie cazaban, Irina los ve y piensa
+                    que Nessie es una niña inmortal (un niño mordido por un vampiro) esto alarma a los
+                    Cullen ya que los niños inmortales estan totalmente prohibidos al considerarseles
+                    incapaces de guardar el secreto. Los Cullen deciden buscar aliados para tenerlos
+                    como testigos y conseguir de esa manera que los Vulturi los escuchen y tengan la
+                    oportunidad de ver que Nessie no es en realidad ninguna niña inmortal. Varios vampiros
+                    van llegando a la casa y uniendose a la causa, algunos como testigos y otros como
+                    posibles luchadores en caso de que la batalla se desate. Alice y Jasper se van de
+                    la casa y solo dejan una nota diciendo que tenian sus motivos para hacerlo. Bella
+                    descubre que Alice le ha dejado una nota exclusivamente a ella con el nombre de un
+                    abogado, este es el encargado de falsificar documentos para los Cullen, nota que
+                    la intención de Alice era que haga huir a Nessie y esconderle esta idea a Edward,
+                    y por consiguiente, a Aro. El tiempo pasa, y el dia llega, los Vulturi vienen con
+                    toda la guardia y muchos testigos, superando incluso a los Cullen con todos sus aliados
+                    y la manada, aun asi, logran que Aro los escuche y lea los pensamientos de Edward,
+                    descubriendo el verdadero origen de Nessie, aun asi, al ser una especie única y no
+                    saber como se desarrollara, someten a elección su ejecución, Caius vota en contra
+                    de Nessie y Marcus a favor, por lo que la decisión recae en Aro, en ese momento Bella
+                    ve todo perdido y le dice a Jacob que huya con Nessie cuando los demás se distrajeran
+                    y que encontrara los documentos y el dinero necesarios para el viaje en la casa,
+                    Edward le pregunta si todo eso era idea de Alice a lo que Bella afirma, Edward y
+                    Bella se despiden de Jacob y Nessie, y simplemente esperan que la batalla comienze,
+                    Edward se tendria que encargar de Demetri para que la huida funcione. Poco antes
+                    de que Aro haga su decisión y tras un discurso por parte de Garret, un nomada, acerca
+                    de las verdaderas intecniones de los Vulturi, Alice y Jasper aparecen junto con una
+                    vampira amazonica y un chico llamado Nahuel, quien asegura ser también un mitad humano-mitad
+                    vampiro y tener otras tres medio hermanas de la misma especie, explica que a los
+                    7 años alcanzan la edad adulta y el tiempo se congela para ellos, una vez con esa
+                    prueba, Aro ya no tiene excusas pro lo que vota a favor y los Vulturi de retiran.
+                    La saga finaliza con Edward y Bella en su propia casa, acostando a Nessie, y Bella
+                    permitiendole a Edward escuchar sus pensamientos, demostrandole de esa manera que
+                    lo ama mas que a cualquier otra cosa.</p>
+            </div>
+        </div>
+        <div data-role="page" id="Canciones-Crepusculo" data-theme="b">
+            <div data-role="header">
+                <h1>Canciones</h1>
+            </div>
+            <div data-role="content">
+                <a data-role="button" href="#Canciones" data-rel="page">Menu Canciones</a>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Crepusculo</h1>
+                <p>01 - Muse - Supermassive black hole</p>
+                <p>02 - Paramore - Decode</p>
+                <p>03 - The Black Ghosts - Full moon</p>
+                <p>04 - Linkin Park - Leave out all the rest</p>
+                <p>05 - Mutemath - Spotlight (Twilight mix)</p>
+                <p>06 - Perry Farrell- Go all the way (Into the Twilight)</p>
+                <p>07 - Collective Soul - Tremble for my beloved</p>
+                <p>08 - Paramore - I caught myself</p>
+                <p>09 - Blue Foundation - Eyes on fire</p>
+                <p>10 - Rob Pattinson - Never think</p>
+                <p>11 - Iron and Wine - Flightless bird, American mouth</p>
+                <p>12 - Carter Burwell - Bella's lullaby</p>
+            </div>
+        </div>
+        <div data-role="page" id="Canciones-LunaNueva" data-theme="b">
+            <div data-role="header">
+                <h1>Canciones</h1>
+            </div>
+            <div data-role="content">
+                <a data-role="button" href="#Canciones" data-rel="page">Menu Canciones</a>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Luna Nueva</h1>
+                <p>1. Death Cab For Cutie – Meet Me On The Equinox</p>
+                <p>2. Band Of Skulls – Friends</p>
+                <p>3. Thom Yorke – Hering Damage</p>
+                <p>4. Lykke Li – Possibility</p>
+                <p>5. The Killers – A White Demon Love Song</p>
+                <p>6. Anya Marina – Satellite Heart</p>
+                <p>7. Muse – I Belong To You (New Moon)</p>
+                <p>8. Bon Iver and St. Vincent – Rosyln</p>
+                <p>9. Black Rebel Motorcycle Club – Done All Wrong</p>
+                <p>10. Hurricane Bells – Monsters</p>
+                <p>11. Sea Wolf – The Violet Hour</p>
+                <p>12. Ok Go- Shooting The Moon</p>
+                <p>13. Grizzly Bear – Slow Life</p>
+                <p>14. Editors – No Sound But The Wind</p>
+                <p>15. Alexandre Desplat – New Moon (The Meadow)</p>
+            </div>
+        </div>
+        <div data-role="page" id="Canciones-Eclipse" data-theme="b">
+            <div data-role="header">
+                <h1>Canciones</h1>
+            </div>
+            <div data-role="content">
+                <a data-role="button" href="#Canciones" data-rel="page">Menu Canciones</a>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Eclipse</h1>
+                <p>1. "Eclipse (All Yours)" byMetric</p>
+                <p>2. Neutron Star Collision (Love Is Forever)" by Muse</p>
+                <p>3. "Ours" by The Bravery</p>
+                <p>4. "Heavy in Your Arms" by Florence and the Machine</p>
+                <p>5. "My Love" by Sia</p>
+                <p>6. "Atlas" by Fanfarlo</p>
+                <p>7. "Chop and Change" by The Black Keys</p>
+                <p>8. "Rolling in on a Burning Tire" by The Dead Weather</p>
+                <p>9. "Let's Get Lost" by Beck and Bat for Lashes</p>
+                <p>10. "Jonathan Low" by Vampire Weekend</p>
+                <p>11. "With You in My Head" by UNKLE featuring The Black Angels</p>
+                <p>12. "A Million Miles an Hour" by Eastern Conference Champions</p>
+                <p>13. "Life on Earth" by Band of Horses</p>
+                <p>14. "What Part of Forever" by Cee Lo Green</p>
+                <p>15. "Jacob's Theme" by Howard Shore</p>
+            </div>
+        </div>
+        <div data-role="page" id="Canciones-AmanecerPart1" data-theme="b">
+            <div data-role="header">
+                <h1>Canciones</h1>
+            </div>
+            <div data-role="content">
+                <a data-role="button" href="#Canciones" data-rel="page">Menu Canciones</a>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Amanecer part1</h1>
+                <p>1. "Endtapes"</p>
+                <p>2. "Love Will Take You"</p>
+                <p>3. "It Will Rain"</p>
+                <p>4. "Turning Page"</p>
+                <p>5. "From Now On"</p>
+                <p>6. "A Thousand Years"</p>
+                <p>7. "Neighbors"</p>
+                <p>8. "I Didn't Mean It"</p>
+                <p>9. "Sister Rosetta" (2011 version)</p>
+                <p>10. "Northern Lights"</p>
+                <p>11. "Flightless Bird, American Mouth" (Wedding version)</p>
+                <p>12. "Requiem on Water"</p>
+                <p>13. "Cold"</p>
+                <p>14. "Lloverá"</p>
+                <p>15. "Love Death Birth"</p>
+                <p>16. "Like a Drug"</p>
+                <p>17. "Turning Page" (instrumental)</p>
+                <p>18. "Eclipse (All Yours)" (instrumental)</p>
+            </div>
+        </div>
+        <div data-role="page" id="Canciones-AmanecerPart2" data-theme="b">
+            <div data-role="header">
+                <h1>Canciones</h1>
+            </div>
+            <div data-role="content">
+                <a data-role="button" href="#Canciones" data-rel="page">Menu Canciones</a>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Amanecer part2</h1>
+                <p>1.- Where I Come From (Passion Pit)</p>
+                <p>2.- Bittersweet (Ellie Goulding)</p>
+                <p>3.- The Forgotten (Green Day)</p>
+                <p>4.- Fire in the Water (Feist)</p>
+                <p>5.- Everything and Nothing (The Boom Circuits)</p>
+                <p>6.- The Antidote (St. Vincent)</p>
+                <p>7.- Speak Up (Pop ETC)</p>
+                <p>8.- Heart of tone (Iko)</p>
+                <p>9.- Cover Your Tracks (A Boy and His Kite)</p>
+                <p>10.- Ghosts (James Vincent McMorrow)</p>
+                <p>11.- All I’ve Ever Needed (Paul McDonald &amp; Nikki Reed)</p>
+                <p>12.- New For You (Reeve Carney)</p>
+                <p>13.- A Thousand Years (Part Two) (Christina Perri)</p>
+                <p>14.- Plus Que Ma Prope Vie (Carter Burwell)</p>
+            </div>
+        </div>
+    </body>
+
+</html>
